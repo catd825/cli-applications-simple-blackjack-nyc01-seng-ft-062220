@@ -39,16 +39,16 @@ def initial_round
 end
 
 def hit?(user_hand)
-  prompt_user
-  user_input = get_user_input
+  prompt_user #user hits h or s
+  user_input = get_user_input #receive user input
   
-  if user_input != 'h' && user_input != 's'
+  if user_input != 'h' && user_input != 's'  #if they do not hit h or s, then notify of invalid command and start prompt again
     invalid_command
     prompt_user
     user_input = get_user_input
   end
 
-  if user_input == 'h'
+  if user_input == 'h' #if user htis and the 
     new_card = deal_card
     user_hand += new_card
   elsif user_input == 's'
