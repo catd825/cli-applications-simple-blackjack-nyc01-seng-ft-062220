@@ -52,9 +52,9 @@ def hit?(user_hand)
     new_card = deal_card #set new card equal to deal card (random between 1 and 11)
     user_hand += new_card #add each new card to the existing total
   elsif user_input == 's' #if user stays
-    user_hand #keep user hand (which is )
+    user_hand #keep user hand (which is updated after each hit)
   end
-  user_hand
+  user_hand #return final hand
 end
 
 def invalid_command
