@@ -48,11 +48,11 @@ def hit?(user_hand)
     user_input = get_user_input
   end
 
-  if user_input == 'h' #if user htis and the 
-    new_card = deal_card
-    user_hand += new_card
-  elsif user_input == 's'
-    user_hand
+  if user_input == 'h' #if user hits
+    new_card = deal_card #set new card equal to deal card (random between 1 and 11)
+    user_hand += new_card #add each new card to the existing total
+  elsif user_input == 's' #if user stays
+    user_hand #keep user hand (which is )
   end
   user_hand
 end
