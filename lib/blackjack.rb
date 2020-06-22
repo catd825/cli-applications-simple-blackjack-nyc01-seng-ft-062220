@@ -69,12 +69,12 @@ end
 def runner
  welcome #prompt welcome
   user_hand = initial_round #set the user hand to the first round, handed 2 cards.
-  card_total = user_hand #then set the card total 
+  card_total = user_hand #then set card_total to user hand
 
-  until card_total >= 21
-    card_total = hit?(card_total)
-    display_card_total(card_total)
+  until card_total >= 21 #until hits limit of 21
+    card_total = hit?(card_total) #prompt h, s, or invalid
+    display_card_total(card_total) #then display the total
   end
-  end_game(card_total)
+  end_game(card_total) #prompt end to game - you cannot win, so it will continue to stay or end.
 end
     
